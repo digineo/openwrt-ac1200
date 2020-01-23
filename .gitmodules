@@ -1,0 +1,12 @@
+[submodule "openwrt-base"]
+	path = repos/openwrt
+	url = https://git.openwrt.org/openwrt/openwrt.git
+	branch = openwrt-19.07
+[submodule "openwrt-packages"]
+	path = repos/openwrt-packages
+	url = https://git.openwrt.org/feed/packages.git
+	branch = openwrt-19.07
+[submodule "openwrt-luci"]
+	path = repos/openwrt-luci
+	url = https://git.openwrt.org/project/luci.git
+	branch = openwrt-19.07
