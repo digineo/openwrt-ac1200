@@ -4,6 +4,7 @@ OPENWRT := repos/openwrt
 all: $(OPENWRT)/feeds.conf $(OPENWRT)/.config apply-patches
 	make -C $(OPENWRT) download
 	ionice -c 3 nice -n19 make -C $(OPENWRT) -j$(shell nproc)
+	ln -sf $(OPENWRT)/bin/targets/ramips/mt7621/ ./firmware
 
 $(OPENWRT)/feeds.conf: feeds.conf
 	cp $< $@
